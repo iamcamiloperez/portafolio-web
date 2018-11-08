@@ -1,17 +1,23 @@
-/* Relas */
-/* selectores */
-/* declaraciones */
-/* propiedades */
-/* valores */
-
 body{
+  font-family: 'Sourse Sans Pro',Arial, Helvetica, sans-serif;
   background: rgb(47, 63, 111);
   color: white;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Fjalla One','Times New Roman',Times, sans-serif;
+  font-weight: normal;
+  /* font-style: italic; */
+}
+
+h1{
+  font-size: 40px;
+  line-height: 1.5em;
+  letter-spacing: -.2px;
+  /* text-transform: uppercase; */
+  /* text-decoration: dashed; */
 }
 
 .link{
   color: #ccc2c5;
 }
-#ff0000;
-#00FF00;
-#0000FF;
