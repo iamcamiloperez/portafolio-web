@@ -9,8 +9,9 @@
   </head>
   <body>
     <header class="header">
+      <div class="container">
         <figure class="logo">
-          <img width="200px" src="images/logotipo_cris_white.png" alt="onecristhian">
+          <img height="50px" src="images/logotipo_cris_white.png" alt="onecristhian">
         </figure>
         <nav class="menu">
           <ul>
@@ -25,62 +26,126 @@
             </li>
           </ul>
         </nav>
+      </div>
     </header>
 
     <section class="hero">
-      <h1>Hola! Soy <strong>Cristhian Camilo</strong>
-        <br>Desarrollador <strong>frontend</strong> y <strong>Backend</strong>
-        <br>y este es uno de mis trabajos
-      </h1>
-      <!-- <img src="images/hero.jpg" alt="hero" height="300"/> -->
+      <div class="container">
+        <h1>Hola! Soy <strong>Cristhian Camilo</strong>
+          <br>Desarrollador <strong>frontend</strong> y <strong>Backend</strong>
+          <br>y este es uno de mis trabajos
+        </h1>
+        <img class="hero-img" src="images/hero.jpg" alt="hero" height="300"/>
+      </div>
     </section>
 
     <section id="portafolio" class="portfolio">
-      <h2>Portafolio (Proyectos Destacados)</h2>
-      <article class="project">
-        <div class="project-details">
-          <h3 class="project-title">One Video</h3>
-          <h6 class="project-curse">Curso de React js</h6>
-          <p class="project-date"><small><strong>Fecha:</strong> Nov 2018</small></p>
-          <p class="project-url"><small><strong>Puedes verlo en:</strong> www.platzi.com/native</small></p>
-          <p class="project-description">uis elementum faucibus justo ac suscipit. Pellentesque posuere nisi eget augue laoreet, at volutpat massa accumsan. Curabitur convallis leo quis feugiat aliquam. Nunc sodales eget lacus quis ultrices. Proin nec mi quam. Vivamus malesuada risus in orci venenatis faucibus.</p>
-        </div>
+      <div class="container">
+        <h2>Portafolio (Proyectos Destacados)</h2>
+        <article class="project">
+          <div class="project-details">
+            <h3 class="project-title">One Video</h3>
+            <h6 class="project-course"><strong>Curso de React js</strong></h6>
+            <p class="project-date"><small><strong>Fecha:</strong> Nov 2018</small></p>
+            <p class="project-url"><small><strong>Puedes verlo en:</strong> www.platzi.com/native</small></p>
+            <p class="project-description">uis elementum faucibus justo ac suscipit. Pellentesque posuere nisi eget augue laoreet, at volutpat massa accumsan. Curabitur convallis leo quis feugiat aliquam. Nunc sodales eget lacus quis ultrices. Proin nec mi quam. Vivamus malesuada risus in orci venenatis faucibus.</p>
+          </div>
           <figure class="project-imageContainer">
             <img class="project-image" src="images/trabajo1.jpg" alt="trabajo1" width="500">
           </figure>
-      </article>
-      <article class="project">
-        <div class="project-details">
-          <h3 class="project-title">One Video</h3>
-          <h6 class="project-curse">Curso de React js</h6>
-          <p class="project-date"><small><strong>Fecha:</strong> Nov 2018</small></p>
-          <p class="project-url"><small><strong>Puedes verlo en:</strong> www.platzi.com/native</small></p>
-          <p class="project-description">uis elementum faucibus justo ac suscipit. Pellentesque posuere nisi eget augue laoreet, at volutpat massa accumsan. Curabitur convallis leo quis feugiat aliquam. Nunc sodales eget lacus quis ultrices. Proin nec mi quam. Vivamus malesuada risus in orci venenatis faucibus.</p>
-        </div>
+        </article>
+        <article class="project">
+          <div class="project-details">
+            <h3 class="project-title">One Video</h3>
+            <h6 class="project-course"><strong>Curso de React js</strong></h6>
+            <p class="project-date"><small><strong>Fecha:</strong> Nov 2018</small></p>
+            <p class="project-url"><small><strong>Puedes verlo en:</strong> www.platzi.com/native</small></p>
+            <p class="project-description">uis elementum faucibus justo ac suscipit. Pellentesque posuere nisi eget augue laoreet, at volutpat massa accumsan. Curabitur convallis leo quis feugiat aliquam. Nunc sodales eget lacus quis ultrices. Proin nec mi quam. Vivamus malesuada risus in orci venenatis faucibus.</p>
+          </div>
           <figure class="project-imageContainer">
             <img class="project-image" src="images/trabajo1.jpg" alt="trabajo1" width="500">
           </figure>
-      </article>
+        </article>
+      </div>
     </section>
-    <section id="cursos">
-      <h2>Algunos cursos que he realizado</h2>
-      <article class="course">
-        <figure class="course-imageContainer">
-          <img class="course-image" src="images/bootstrap.jpeg" width="500" alt="bootstrap">
-        </figure>
-        <h3 class="course-title">Bootstrap</h3>
-        <p class="course-description">Phasellus nec ultricies velit, efficitur rhoncus felis. Aliquam erat volutpat. Duis elementum faucibus justo ac suscipit.</p>
-        <a class="course-link" href="#">Ver Curso</a>
-      </article>
+    <div class="course-list-title-wrapper">
+      <div class="container">
+        <h2 class="course-list-title">Algunos cursos que he realizado</h2>
+      </div>
+    </div>
+    <section id="cursos" class="course-list">
+      <div class="container">
+        <article class="course">
+          <figure class="course-imageContainer">
+            <img class="course-image" src="images/bootstrap.jpeg" width="500" alt="bootstrap">
+          </figure>
+          <div class="course-detail">
+            <h3 class="course-title">Bootstrap</h3>
+            <p class="course-description">Phasellus nec ultricies velit, efficitur rhoncus felis. Aliquam erat volutpat. Duis elementum faucibus justo ac suscipit.</p>
+            <a class="course-link" href="#">Ver Curso</a>
+          </div>
+        </article>
+        <article class="course">
+          <figure class="course-imageContainer">
+            <img class="course-image" src="images/bootstrap.jpeg" width="500" alt="bootstrap">
+          </figure>
+          <div class="course-detail">
+            <h3 class="course-title">Bootstrap</h3>
+            <p class="course-description">Phasellus nec ultricies velit, efficitur rhoncus felis. Aliquam erat volutpat. Duis elementum faucibus justo ac suscipit.</p>
+            <a class="course-link" href="#">Ver Curso</a>
+          </div>
+        </article>
+        <article class="course">
+          <figure class="course-imageContainer">
+            <img class="course-image" src="images/bootstrap.jpeg" width="500" alt="bootstrap">
+          </figure>
+          <div class="course-detail">
+            <h3 class="course-title">Bootstrap</h3>
+            <p class="course-description">Phasellus nec ultricies velit, efficitur rhoncus felis. Aliquam erat volutpat. Duis elementum faucibus justo ac suscipit.</p>
+            <a class="course-link" href="#">Ver Curso</a>
+          </div>
+        </article>
+        <article class="course">
+          <figure class="course-imageContainer">
+            <img class="course-image" src="images/bootstrap.jpeg" width="500" alt="bootstrap">
+          </figure>
+          <div class="course-detail">
+            <h3 class="course-title">Bootstrap</h3>
+            <p class="course-description">Phasellus nec ultricies velit, efficitur rhoncus felis. Aliquam erat volutpat. Duis elementum faucibus justo ac suscipit.</p>
+            <a class="course-link" href="#">Ver Curso</a>
+          </div>
+        </article>
+      </div>
     </section>
 
     <section id="contacto" class="contact">
-      <form class="form-email" action="index.html" method="post">
-        <h3>Contacto</h3>
-        <input id="email" type="text" placeholder="Déjame tu email" name="" value="">
-        <button type="button" name="button">Enviar</button>
-      </form>
+      <div class="container">
+        <form class="form-email" action="index.html" method="post">
+          <h3>Contacto</h3>
+          <input id="email" type="text" placeholder="Déjame tu email" name="" value="">
+          <button type="button" name="button">Enviar</button>
+        </form>
+        <div class="social">
+          <a href="https://facebook.com/onecristhian" class="social-link facebook"></a>
+          <a href="https://github.com/onecristhian" class="social-link github"></a>
+          <a href="https://instagram.com/onecristhian" class="social-link instagram"></a>
+          <a href="https://twitter.com/onecristhian_" class="social-link twitter"></a>
+        </div>
+      </div>
     </section>
-    <footer class="footer">footer</footer>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="">
+          <p>Curso de Desarrollo Web 2018 <img src="images/platzi.png" alt="platzi" width="80"> </p>
+        </div>
+        <div class="">
+          <p>
+            Designed with <\3 by <a href="https://twitter.com/thespianartist">@thespianartist</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
   </body>
 </html>
