@@ -11,6 +11,7 @@ body{
 .header{
   background-color: #1b2127;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   height: 70px;
   align-items: center;
@@ -90,6 +91,7 @@ h3{
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .hero-img{
@@ -114,6 +116,7 @@ h3{
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .project-course,
@@ -209,6 +212,7 @@ h3{
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .form-email input{
@@ -272,6 +276,7 @@ h3{
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .footer img{
@@ -283,11 +288,27 @@ h3{
 }
 
 .container{
-  width: 1000px;
+  max-width: 1000px;
   margin: 0 auto;
   display: inherit;
   justify-content: inherit;
   align-items: inherit;
   height: inherit;
   flex-wrap: inherit;
+}
+
+@media screen and (max-width: 1024){
+
+}
+
+@media screen and (max-width:768px){
+
+}
+
+@media screen and (max-width: 480){
+
+}
+
+@media screen and (max-width: 320){
+
 }
