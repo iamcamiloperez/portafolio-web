@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
-    <i class="icon-menu burger-button"></i>
+    <i id="burguer" class="icon-menu burger-button"></i>
     <header class="header">
       <div class="container">
         <figure class="logo">
@@ -152,6 +152,33 @@
         </div>
       </div>
     </footer>
+    <script type="text/javascript">
+      //variables
+      const menu = document.querySelector('.menu')
+      const link = document.querySelector('.link')
+      const burgerButton = document.getElementById('burguer')
 
+      //function
+      const hideShow = () => menu.classList.contains('is-active') ? menu.classList.remove('is-active') : menu.classList.add('is-active')
+
+      //Invocar media querys JS
+      const ipad = window.matchMedia('screen and (max-width:768px)')
+      //escuchar resize
+      ipad.addListener(validation)
+
+      //funcion para validar tamaño
+      function validation (event){
+        if(event.matches===true){
+           burgerButton.addEventListener('click', hideShow)
+           menu.addEventListener('click', hideShow)
+        } else{
+          burgerButton.removeEventListener('click', hideShow)
+          menu.removeEventListener('click', hideShow)
+        }
+      }
+
+
+
+    </script>
   </body>
 </html>

@@ -57,7 +57,7 @@ body{
   line-height: 40px;
   text-align: center;
   position: fixed;
-  z-index: 3;
+  z-index: 4;
   left: 5px;
   top:5px;
   color: white;
@@ -405,6 +405,38 @@ h3{
 
   .header .logo{
     justify-content: center;
+  }
+
+  .menu{
+    position: fixed;
+    background: rgb(46, 56, 73, .95);
+    z-index: 3;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    /* height: 100vh; */
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* esconder menu */
+    left:-100vw;
+    /* animación */
+    transition: .3s;
+  }
+
+  .menu.is-active{
+    left:0;
+  }
+
+  .link{
+    height: 40px;
+    font-size: 2em;
+    text-decoration: underline;
+  }
+
+  .menu ul li{
+    margin-bottom: 1em;
   }
 
   .project{
